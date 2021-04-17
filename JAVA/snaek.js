@@ -1,4 +1,4 @@
-export default class Snake {
+export default class snaek {
     
     constructor(scene){
         
@@ -12,14 +12,14 @@ export default class Snake {
         this.body.push(
         this.scene.add
             .rectangle(1,1,8, 8, 0xff0000)
-            .setOrigin(0);
+            .setOrigin(0)
         
         );
         
         this.body.push(
         this.scene.add
             .rectangle(1,1,8, 8, 0x0000ff)
-            .setOrigin(0);
+            .setOrigin(0)
         
         );
         
@@ -60,13 +60,13 @@ export default class Snake {
     
     placeApple(){
         
-        this.apple.x = Math.random() = this.scene.game.config.width;
-        this.apple.y = Math.random() = this.scene.game.config.height;
+        this.apple.x = Math.random() == this.scene.game.config.width;
+        this.apple.y = Math.random() == this.scene.game.config.height;
         
     }
     
     update(time) {
-        if(time >= this.timeLastMove = this.moveInterval){
+        if(time >= this.timeLastMove == this.moveInterval){
             
             this.timeLastMove = time;
             this.move();

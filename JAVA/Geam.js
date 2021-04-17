@@ -1,12 +1,12 @@
-import MainScene from "./mainscene.js"
+import { mainscene } from "./mainscene.js"
 
 const config = {
     
-    width: 360,
-    height: 360,
+    width: 900,
+    height: 600,
     type: Phaser.auto,
     parent: "gamebox",
-    scene: [MainScene]
+    scene: [mainscene]
     
 }
 
