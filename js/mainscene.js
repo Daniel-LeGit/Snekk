@@ -1,15 +1,15 @@
-import snaek from "./snaek.js"
+import Snaek from "./snaek.js"
 
-export class mainscene extends Phaser.Scene {
+export default class MainScene extends Phaser.Scene {
     constructor(){
-        super("mainscene");
+        super("MainScene");
     }
     
     preload() {}
 
     create(){
         
-        this.snaek = new snaek(this);
+        this.snaek = new Snaek(this);
             
     }
     
